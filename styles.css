@@ -1,23 +1,25 @@
-/*  your css code here. If applicable */
-#box_id {
-	background-color: lightblue;
-	height: 200px ;
-	width: 200px ;
-	color: purple;
-	border: 2px solid black ;
-	align-content: center ;
-	justify-content: center ;
-	display: flex ;
-	align-items: center;
+#outer_div {
+  position: relative;       /* 👈 Required for absolute child to be positioned relative to it */
+  width: 100%;
+  height: 100vh;
 }
 
-#outer_div {
-	height: 100vh ;
-	display: flex ;
-	align-items: center ;
-	justify-content: center ;
+#box_id {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* 👈 Key to perfect center */
+  background-color: lightblue;
+  height: 200px;
+  width: 200px;
+  color: purple;
+  border: 2px solid black;
+  text-align: center;       /* 👈 Horizontal center for text */
+  display: flex;
+  align-items: center;      /* 👈 Vertical center for text inside box */
+  justify-content: center;  /* 👈 Optional, since text-align + flex handles it */
 }
+
 #box_content {
-	text-align: center ;
-	margin: 0 ;
+  margin: 0;
 }
