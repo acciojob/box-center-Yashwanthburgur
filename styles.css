@@ -1,12 +1,9 @@
-/* Make the outer container fill the viewport */
-#outer_div {
-  position: relative;
-  width: 100%;
-  height: 100vh;
+body {
   margin: 0;
+  height: 100vh;
+  position: relative;
 }
 
-/* Center the box on the page */
 #box_id {
   position: absolute;
   top: 50%;
@@ -18,7 +15,6 @@
   border: 2px solid black;
 }
 
-/* Center the text inside the box */
 #box_content {
   position: absolute;
   top: 50%;
@@ -27,5 +23,4 @@
   color: purple;
   margin: 0;
 }
-
 }
